@@ -13,6 +13,7 @@ ENV/
 .coverage
 htmlcov/
 
-# OS metadata
+# OS metadata & Office temp files
 .DS_Store
 Thumbs.db
+~$*
