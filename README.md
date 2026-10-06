@@ -1,5 +1,6 @@
 # Mini E-Commerce Order & Inventory System: Root Cause Analysis (RCA) & Fault Identification
 
+[![GitHub](https://img.shields.io/badge/GitHub-Zeinkunn%2FRCA--Test-blue?logo=github)](https://github.com/Zeinkunn/RCA-Test)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Tests](https://img.shields.io/badge/Tests-Passing-brightgreen.svg)]()
 [![Course](https://img.shields.io/badge/Mata%20Kuliah-Analisis%20dan%20Pengujian%20Sistem-orange.svg)]()
