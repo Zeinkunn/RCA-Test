@@ -5,7 +5,7 @@
 [![Tests](https://img.shields.io/badge/Tests-Passing-brightgreen.svg)]()
 [![Course](https://img.shields.io/badge/Mata%20Kuliah-Analisis%20dan%20Pengujian%20Sistem-orange.svg)]()
 
-> Repositori tugas besar mata kuliah **Analisis dan Pengujian Sistem**. Berisi implementasi mini program transaksi *e-commerce*, pembuktian empiris **3 Defect/Fault kritis**, analisis mendalam **Root Cause Analysis (RCA)** menggunakan metode **5-Whys** dan **Ishikawa (Fishbone) Diagram**, matriks **CAPA**, serta generator slide presentasi **PowerPoint (`.pptx`)**.
+> Repositori tugas besar mata kuliah **Analisis dan Pengujian Sistem**. Berisi implementasi mini program transaksi *e-commerce*, pembuktian empiris **3 Defect/Fault kritis**, analisis mendalam **Root Cause Analysis (RCA)** menggunakan metode **5-Whys** dan **Ishikawa (Fishbone) Diagram**, matriks **CAPA**, serta file presentasi **PowerPoint (`.pptx`)**.
 
 ---
 
@@ -35,8 +35,6 @@ RCA/
 │   └── test_faults_fixed.py      # Automated test verifikasi 100% perbaikan lolos
 ├── docs/
 │   └── RCA_REPORT.md             # Dokumen Laporan Lengkap RCA (5-Whys, Fishbone, CAPA)
-├── scripts/
-│   └── generate_ppt.py           # Script python-pptx pembuat file presentasi PowerPoint
 ├── RCA_Presentasi_Tugas_AP.pptx  # File Slide PowerPoint Final Widescreen 16:9 (16 Slides)
 └── README.md                     # Panduan repositori
 ```
@@ -67,10 +65,7 @@ Dalam rekayasa pengujian perangkat lunak, rantai terjadinya malfungsi adalah:
 
 ### 1. Prasyarat Lingkungan
 - Python versi 3.10 atau lebih baru terpasang di sistem.
-- Instalasi dependensi untuk slide generator:
-  ```bash
-  pip install python-pptx
-  ```
+- Tidak memerlukan dependensi eksternal pihak ketiga (semua pengujian menggunakan pustaka bawaan standar Python: `unittest`, `threading`, `decimal`, `dataclasses`).
 
 ### 2. Menjalankan Uji Pembuktian Bug (Defect Reproducer)
 Perintah ini membuktikan bahwa ketiga defect benar-benar ada dan memicu kegagalan sistem:
@@ -103,13 +98,6 @@ Perintah ini membuktikan bahwa seluruh perbaikan telah menyelesaikan ketiga defe
 python tests/test_faults_fixed.py
 ```
 *Hasil:* `Ran 3 tests ... OK (100% Passed)`.
-
-### 4. Menghasilkan Ulang Slide PowerPoint (`.pptx`)
-Untuk membuat ulang file presentasi slide secara otomatis:
-```bash
-python scripts/generate_ppt.py
-```
-File akan diperbarui di root repositori: `RCA_Presentasi_Tugas_AP.pptx`.
 
 ---
 
